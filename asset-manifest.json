@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/polo-shuffler/static/css/main.6112e4d3.css",
-    "main.js": "/polo-shuffler/static/js/main.717d7c0e.js",
+    "main.js": "/polo-shuffler/static/js/main.40c97163.js",
     "static/js/787.af17ab8a.chunk.js": "/polo-shuffler/static/js/787.af17ab8a.chunk.js",
     "static/media/textured-paper.png": "/polo-shuffler/static/media/textured-paper.2e58282350a06f65e011.png",
     "static/media/Street_Fighter_VS_logo.png": "/polo-shuffler/static/media/Street_Fighter_VS_logo.b4ec8f9e4840ca95d591.png",
     "index.html": "/polo-shuffler/index.html",
     "main.6112e4d3.css.map": "/polo-shuffler/static/css/main.6112e4d3.css.map",
-    "main.717d7c0e.js.map": "/polo-shuffler/static/js/main.717d7c0e.js.map",
+    "main.40c97163.js.map": "/polo-shuffler/static/js/main.40c97163.js.map",
     "787.af17ab8a.chunk.js.map": "/polo-shuffler/static/js/787.af17ab8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6112e4d3.css",
-    "static/js/main.717d7c0e.js"
+    "static/js/main.40c97163.js"
   ]
 }
