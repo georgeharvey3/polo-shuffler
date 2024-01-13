@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/polo-shuffler/static/css/main.82920578.css",
-    "main.js": "/polo-shuffler/static/js/main.cf3a359e.js",
+    "main.css": "/polo-shuffler/static/css/main.f7d6bb73.css",
+    "main.js": "/polo-shuffler/static/js/main.8c5e9f55.js",
     "static/js/787.af17ab8a.chunk.js": "/polo-shuffler/static/js/787.af17ab8a.chunk.js",
     "static/media/textured-paper.png": "/polo-shuffler/static/media/textured-paper.2e58282350a06f65e011.png",
     "static/media/noise.mp3": "/polo-shuffler/static/media/noise.772bc43dcce7bcfd79e7.mp3",
     "static/media/audio.mp3": "/polo-shuffler/static/media/audio.20ad9823aef89f7191ee.mp3",
     "static/media/Street_Fighter_VS_logo.png": "/polo-shuffler/static/media/Street_Fighter_VS_logo.b4ec8f9e4840ca95d591.png",
     "static/media/sound.wav": "/polo-shuffler/static/media/sound.0d0b2590acf5187a227f.wav",
+    "static/media/oof.wav": "/polo-shuffler/static/media/oof.59352ebeeb2c716fc0c8.wav",
     "index.html": "/polo-shuffler/index.html",
-    "main.82920578.css.map": "/polo-shuffler/static/css/main.82920578.css.map",
-    "main.cf3a359e.js.map": "/polo-shuffler/static/js/main.cf3a359e.js.map",
+    "main.f7d6bb73.css.map": "/polo-shuffler/static/css/main.f7d6bb73.css.map",
+    "main.8c5e9f55.js.map": "/polo-shuffler/static/js/main.8c5e9f55.js.map",
     "787.af17ab8a.chunk.js.map": "/polo-shuffler/static/js/787.af17ab8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82920578.css",
-    "static/js/main.cf3a359e.js"
+    "static/css/main.f7d6bb73.css",
+    "static/js/main.8c5e9f55.js"
   ]
 }
