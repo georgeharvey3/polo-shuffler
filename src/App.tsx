@@ -25,7 +25,7 @@ function App() {
   const [unselectedPlayers, setUnselectedPlayers] = useState<Player[] | []>([]);
   const [sortedMatchups, setSortedMatchups] = useState<Player[][][] | []>([]);
   const [matchupIndex, setMatchupIndex] = useState(0);
-  const [playerDataLoaded, setPlayerDataLoaded] = useState(false)
+  const [playerDataLoaded, setPlayerDataLoaded] = useState(false);
 
   const setPlayerData = () => {
     const options = {
@@ -50,7 +50,7 @@ function App() {
 
   const formatPlayerData = (sheetsData: SheetsData): Player[] =>
     sheetsData
-      .filter((sheetRow) => sheetRow.name !== '')
+      .filter((sheetRow) => sheetRow.name !== "")
       .map((sheetRow) => ({
         name: sheetRow.name,
         points: parseInt(sheetRow["points total"], 10),
@@ -125,6 +125,7 @@ function App() {
 
     const matches = getAllMatches(teams, chosenPlayers);
 
+
     const sorted = [...matches].sort(
       (matchup1: Player[][], matchup2: Player[][]) =>
         // @ts-ignore
@@ -141,7 +142,7 @@ function App() {
   };
 
   const onReshuffleClicked = () => {
-    setMatchupIndex(matchupIndex + 1);
+    setMatchupIndex((matchupIndex + 2) % sortedMatchups.length);
     new Audio(require("./noise.mp3")).play();
   };
 
