@@ -18,6 +18,8 @@ const NEW_PLAYER: Player = {
   points: 1,
   pointsPerGame: 1,
 };
+const NUM_PLAYERS_IN_MATCH = 6;
+const NUM_TEAMS_IN_MATCH = 2;
 
 function App() {
   const [players, setPlayers] = useState<Player[] | []>([NEW_PLAYER]);
@@ -67,7 +69,7 @@ function App() {
   }, [players]);
 
   const addPlayerToSelection = (player: Player) => {
-    if (selectedPlayers.length === 6) return;
+    if (selectedPlayers.length === NUM_PLAYERS_IN_MATCH) return;
     setSelectedPlayers([...selectedPlayers, player]);
     setUnselectedPlayers(
       unselectedPlayers.filter(
@@ -119,7 +121,7 @@ function App() {
 
   const getScoreDifference = (team1: Player[], team2: Player[]) =>
     Math.abs(getTeamScore(team1) - getTeamScore(team2));
-
+  
   const getSortedMatchups = (chosenPlayers: Player[]) => {
     const teams = getAllTeams(chosenPlayers);
 
@@ -142,7 +144,7 @@ function App() {
   };
 
   const onReshuffleClicked = () => {
-    setMatchupIndex((matchupIndex + 2) % sortedMatchups.length);
+    setMatchupIndex((matchupIndex + NUM_TEAMS_IN_MATCH) % sortedMatchups.length);
     new Audio(require("./noise.mp3")).play();
   };
 
@@ -157,7 +159,7 @@ function App() {
     <div className="App">
       <h1>Polo Shuffler</h1>
       {!playerDataLoaded ? <Spinner /> : null}
-      {playerDataLoaded && selectedPlayers.length < 6 ? (
+      {playerDataLoaded && selectedPlayers.length < NUM_PLAYERS_IN_MATCH ? (
         <Selector
           selectedPlayers={selectedPlayers}
           players={unselectedPlayers}
@@ -170,25 +172,25 @@ function App() {
           removePlayerFromSelection={removePlayerFromSelection}
         />
       ) : null}
-      {selectedPlayers.length === 6 && sortedMatchups.length === 0 ? (
+      {selectedPlayers.length === NUM_PLAYERS_IN_MATCH && sortedMatchups.length === 0 ? (
         <button className="button" onClick={onShuffleClicked}>
           Shuffle
         </button>
       ) : null}
       <div className="shuffled-actions">
-        {selectedPlayers.length === 6 && sortedMatchups.length > 0 ? (
+        {selectedPlayers.length === NUM_PLAYERS_IN_MATCH && sortedMatchups.length > 0 ? (
           <button className="button" onClick={onReshuffleClicked}>
             Reshuffle
           </button>
         ) : null}
-        {selectedPlayers.length === 6 && sortedMatchups.length > 0 ? (
+        {selectedPlayers.length === NUM_PLAYERS_IN_MATCH && sortedMatchups.length > 0 ? (
           <button className="button" onClick={onResetClicked}>
             Reset
           </button>
         ) : null}
       </div>
       {sortedMatchups.length ? (
-        <BestMatchup bestMatchup={sortedMatchups[matchupIndex]} />
+        <BestMatchup bestMatchup={sortedMatchups[matchupIndex]}/>
       ) : null}
     </div>
   );
