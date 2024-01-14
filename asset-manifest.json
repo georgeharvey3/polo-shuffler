@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polo-shuffler/static/css/main.f7d6bb73.css",
-    "main.js": "/polo-shuffler/static/js/main.8c5e9f55.js",
+    "main.js": "/polo-shuffler/static/js/main.d15a34ec.js",
     "static/js/787.af17ab8a.chunk.js": "/polo-shuffler/static/js/787.af17ab8a.chunk.js",
     "static/media/textured-paper.png": "/polo-shuffler/static/media/textured-paper.2e58282350a06f65e011.png",
     "static/media/noise.mp3": "/polo-shuffler/static/media/noise.772bc43dcce7bcfd79e7.mp3",
@@ -11,11 +11,11 @@
     "static/media/oof.wav": "/polo-shuffler/static/media/oof.59352ebeeb2c716fc0c8.wav",
     "index.html": "/polo-shuffler/index.html",
     "main.f7d6bb73.css.map": "/polo-shuffler/static/css/main.f7d6bb73.css.map",
-    "main.8c5e9f55.js.map": "/polo-shuffler/static/js/main.8c5e9f55.js.map",
+    "main.d15a34ec.js.map": "/polo-shuffler/static/js/main.d15a34ec.js.map",
     "787.af17ab8a.chunk.js.map": "/polo-shuffler/static/js/787.af17ab8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7d6bb73.css",
-    "static/js/main.8c5e9f55.js"
+    "static/js/main.d15a34ec.js"
   ]
 }
